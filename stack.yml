@@ -1,0 +1,12 @@
+namespace: apache
+
+stack:
+  defines: process-group
+  runnable-list:
+    - apache/apache
+  variables:
+    apache-image-tag: 2.4.54-debian-11-r55
+    host-http-port: 8080
+    host-https-port: 8443    
+    apache-http-port: 8080
+    apache-https-port: 8443
